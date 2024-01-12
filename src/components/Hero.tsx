@@ -72,7 +72,7 @@ const Hero = () => {
                 src={pic}
                 fill
                 alt='pic'
-                className='  object-contain opacity-50 z-30 '
+                className=' absolute object-cover opacity-70 z-30 '
                 />
         </div>
         <motion.div variants={sliderVariants} initial={'initial'} animate={'animate'}  

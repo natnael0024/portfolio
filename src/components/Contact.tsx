@@ -4,6 +4,7 @@ import axios from 'axios'
 import Image from 'next/image'
 import {MotionValue, motion, useScroll, useTransform} from 'framer-motion'
 import at from '../../public/at-dynamic-premium.png'
+import {toast} from 'react-toastify'
 
 const Contact = () => {
   const handleSubmit = async(e)=>{
@@ -15,11 +16,41 @@ const Contact = () => {
     }
     try{
       const url = new URL(`/api/sendemail`, window.location.origin);
-      const res = await axios.post(url.toString(), mailData);
+      await axios.post(url.toString(), mailData)
+      .then(res=>{
+        toast(res.data.message, {
+          position: 'top-right',
+          autoClose: 3000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
+          e.target[0].value = ""
+          e.target[1].value = ""
+          e.target[2].value = ""
+      })
+      .catch(error=>{
+        toast(error.data.message, {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
+      })
+     console.log('hi')
     }catch(err){
       console.log(err)
     }
   }
+
+  console.log('@jksadhija')
 
   const useParallax = (value:MotionValue, distance:number)=>{
     return useTransform(value ,[0,1],[-distance,distance])
