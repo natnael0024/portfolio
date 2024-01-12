@@ -50,7 +50,7 @@ const Contact = () => {
     }
   }
 
-  console.log('@jksadhija')
+  const currentYear = new Date().getFullYear();
 
   const useParallax = (value:MotionValue, distance:number)=>{
     return useTransform(value ,[0,1],[-distance,distance])
@@ -103,6 +103,15 @@ const Contact = () => {
           alt='image'
           className=' z-0'/>
         </motion.div>
+        <div className=' flex gap-5 text-gray-400 absolute bottom-2'>
+          <span className=' '>
+            {currentYear}
+          </span>
+          <span>|</span>
+          <span>Natnael Legesse</span>
+          <span>|</span>
+          <span>All rights reserved</span>
+        </div>
     </div>
   )
 }
