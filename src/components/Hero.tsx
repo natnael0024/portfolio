@@ -68,7 +68,7 @@ const Hero = () => {
                  className=' bg-white text-black rounded-lg p-2 px-5'>Contact</Link>
            </motion.div>
         </motion.div>
-        <div className=' border-4 border-opacity-15 border-sky-400 rounded-full relative z-30 w-[30rem] h-[25rem] lg:w-[40rem] lg:h-[40rem]'>
+        <div className=' border-4 overflow-hidden border-opacity-15 border-sky-400 rounded-full relative z-30 w-[30rem] h-[25rem] lg:w-[40rem] lg:h-[40rem]'>
             <Image
                 src={pic}
                 fill
