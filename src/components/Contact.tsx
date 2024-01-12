@@ -14,8 +14,8 @@ const Contact = () => {
        message: e.target[2].value
     }
     try{
-      const url = new URL(`/api/sendemail`,window.location.origin);
-      const res = await axios.post(url,mailData)
+      const url = new URL(`/api/sendemail`, window.location.origin);
+      const res = await axios.post(url.toString(), mailData);
     }catch(err){
       console.log(err)
     }
@@ -40,7 +40,6 @@ const Contact = () => {
       transition:{
         duration:20,
         repeat:Infinity,
-        repeatType:'mirror'
       }
     }
   }

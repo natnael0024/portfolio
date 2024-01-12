@@ -15,10 +15,13 @@ const iconVariants = {
     transition:{
       duration:3,
       repeat:Infinity,
-      repeatType:'mirror'
     }
   }
 }
+// const iconVariants = {
+//   initial: { y: 0 },
+//   animate: { y: '100%', transition: { duration: 1, repeat: 3, repeatType: 'reverse' } }
+// };
 
 const Parallax = ({type}) => {
 

@@ -47,8 +47,7 @@ const sliderVariants = {
     transition:{
       duration:15,
       repeat:Infinity,
-      repeatType:'mirror'
-    }
+      }
   }
 }
 const Hero = () => {

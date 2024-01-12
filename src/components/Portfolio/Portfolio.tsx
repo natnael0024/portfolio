@@ -54,7 +54,7 @@ const Portfolio = () => {
         <motion.div style={{scaleX}} className=' min-h-[0.2rem] w-full bg-sky-400'></motion.div>
       </div>
       {portfolios.map(portfolio=>(
-        <Item key={portfolio.id} title={portfolio.title} desc={portfolio.desc} image={portfolio.image} url={portfolio.url} techStack={portfolio.techStack} />
+        <Item key={portfolio.id} title={portfolio.title} desc={portfolio.desc} image={portfolio.image.src} url={portfolio.url} techStack={portfolio.techStack} />
       ))}
     </div>
   )
