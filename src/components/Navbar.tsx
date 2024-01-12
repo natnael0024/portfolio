@@ -14,16 +14,10 @@ const socialMedias = [
         link:'https://www.linkedin.com/in/nathnael-legesse-6239591a2/'
     },
     {
-        id:2,
-        name:'X',
-        icon:<FaXTwitter/>,
-        link:''
-    },
-    {
         id:3,
         name:'Github',
         icon:<FaGithub/>,
-        link:''
+        link:'https://github.com/Natnael0023'
     },
 ]
 
@@ -49,7 +43,7 @@ const Navbar = () => {
              <div className=' flex gap-5'>
                  {
                     socialMedias.map(sm=>(
-                        <Link href={sm.link} className=' text-2xl'>{sm.icon}</Link>
+                        <Link href={sm.link} target='_blank' rel="noopener noreferrer" className=' text-2xl'>{sm.icon}</Link>
                     ))
                  }
              </div>
