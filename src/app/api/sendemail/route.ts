@@ -1,5 +1,5 @@
 import {NextResponse, NextRequest} from 'next/server'
-import nodemailer from 'nodemailer'
+import nodemailer from "nodemailer"
 
 export const POST = async(req:NextRequest, res:NextResponse)=>{
     if(req.method !== 'POST'){

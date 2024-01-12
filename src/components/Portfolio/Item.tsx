@@ -18,7 +18,16 @@ const variants = {
         }
     }
 }
-const Item = ({title,desc,image,url,techStack}) => {
+
+interface ItemProps {
+    title: string;
+    desc: string;
+    image: string;
+    url: string;
+    techStack: string[];
+  }
+
+const Item: React.FC<ItemProps> = ({title,desc,image,url,techStack}) => {
 
     const useParallax = (value: MotionValue<number>, distance:number) => {
         return useTransform(value, [0,1], [-distance, distance])
