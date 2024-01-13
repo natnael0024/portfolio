@@ -12,10 +12,6 @@ const iconVariants = {
   },
   animate:{
     y:'-10%',
-    transition:{
-      duration:3,
-      repeat:Infinity,
-    }
   }
 }
 // const iconVariants = {
@@ -41,7 +37,7 @@ const Parallax = ({type}) => {
         <motion.h1 style={{y:textY}} className=' text-6xl'>
           {type==='services'? 'WHAT I DO':'what I did'}
         </motion.h1>
-        <motion.div style={{x:bgX}} variants={iconVariants} initial='initial' whileInView={'animate'}
+        <motion.div style={{x:bgX}} variants={iconVariants} transition={{duration:3, repeat:Infinity, repeatType:'mirror'}} initial='initial' whileInView={'animate'}
           className=' bottom-10 left-20  absolute  w-[15rem] h-[15rem]' >
           <Image
             src={rocket}

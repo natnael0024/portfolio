@@ -44,10 +44,6 @@ const sliderVariants = {
   animate:{
     opacity:0.07,
     x:'-100%',
-    transition:{
-      duration:15,
-      repeat:Infinity,
-      }
   }
 }
 const Hero = () => {
@@ -75,7 +71,7 @@ const Hero = () => {
                 className=' absolute object-cover opacity-70 z-30 '
                 />
         </div>
-        <motion.div variants={sliderVariants} initial={'initial'} animate={'animate'}  
+        <motion.div variants={sliderVariants} transition={{repeat:Infinity,repeatType:'mirror', duration:15}} initial={'initial'} animate={'animate'}  
         className=' absolute bottom-20 z-0 max-w-[80rem] right-0 text-6xl sm:text-8xl opacity-15'>
            {/* javascript typescript nodejs nextjs php laravel tailwindcss javascript typescript nodejs nextjs php laravel tailwindcss */}
            <div className=' flex gap-5'>
