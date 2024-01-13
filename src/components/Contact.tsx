@@ -71,6 +71,7 @@ const Contact = () => {
       transition:{
         duration:20,
         repeat:Infinity,
+        repeatType:'mirror'
       }
     }
   }
