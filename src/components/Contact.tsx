@@ -84,15 +84,15 @@ const Contact = () => {
       <motion.div style={{y}} className=' z-30  w-full px-3 sm:px-0'>
         <form action="#" className="space-y-8 flex flex-col" onSubmit={handleSubmit}>
           <div>
-              <input type="email" id="email" className="shadow-sm  border   text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  bg-transparent    dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@email.com" required/>
+              <input type="email" id="email" className="shadow-sm  border-2   text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  bg-transparent  focus:right-2   focus:ring-amber-300 focus:border-amber-300 shadow-sm-light" placeholder="name@email.com" required/>
           </div>
           <div>
-              <input type="text" id="subject" className="block p-3 w-full text-sm   rounded-lg border  shadow-sm focus:ring-primary-500 focus:border-primary-500  bg-transparent    dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let me know how I can help you" required/>
+              <input type="text" id="subject" className="block p-3 w-full text-sm   rounded-lg border  shadow-sm focus:right-2 focus:ring-amber-300  bg-transparent     shadow-sm-light" placeholder="Let me know how I can help you" required/>
           </div>
           <div className="sm:col-span-2">
-              <textarea id="message" rows={6} className="block p-2.5 w-full text-sm   rounded-lg shadow-sm border  focus:ring-primary-500 focus:border-primary-500  bg-transparent    dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a message..."></textarea>
+              <textarea id="message" rows={6} className="block p-2.5 w-full text-sm   rounded-lg shadow-sm border  focus:right-2 focus:ring-amber-300  bg-transparent    " placeholder="Leave a message..."></textarea>
           </div>
-          <button type="submit" className="py-3 px-5 text-sm font-semibold text-center  rounded hover:shadow-md bg-sky-400 w-full hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+          <button type="submit" className="py-3 px-5 text-sm font-semibold text-center  rounded hover:shadow-md bg-sky-400 w-full hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
         </form>
       </motion.div>
 
