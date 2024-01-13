@@ -61,7 +61,7 @@ const Hero = () => {
                 <motion.h1 variants={textVariants} className=' text-center sm:text-left text-4xl sm:text-7xl font-bold'>WEB DEVELOPER</motion.h1>
            </motion.div>
            <motion.div variants={textVariants} className=' justify-center sm:justify-start  w-full flex gap-4 mt-10 z-40'>
-                <Link href={'#portfolio'}
+                <Link href={'#Portfolio'}
                  className=' border border-white text-white font-semibold rounded-lg p-2 px-5'>My Portfolio</Link>
                  <Link href={'#Contact'}
                  className=' bg-white text-black rounded-lg p-2 px-5'>Contact</Link>
