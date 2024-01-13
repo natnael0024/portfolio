@@ -11,7 +11,7 @@ import Contact from '@/components/Contact'
 export default function Home() {
   return (
     <main className="">
-      <section id='home'>
+      <section id='Home'>
         <Navbar/>
         <Hero/>
       </section>

@@ -9,7 +9,6 @@ const menus = [
     'Services',
     'Portfolio',
     'Contact',
-    'About'
 ]
 
 const Sidebar = () => {

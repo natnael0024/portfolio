@@ -29,7 +29,6 @@ const portfolios = [
     //   image:p1,
     //   techStack:['Next.JS','TailwindCSS']
     // },
-    
 ]
 
 
