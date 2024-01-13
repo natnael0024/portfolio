@@ -71,7 +71,6 @@ const Contact = () => {
       transition:{
         duration:20,
         repeat:Infinity,
-        repeatType:'mirror'
       }
     }
   }
@@ -97,7 +96,7 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      <motion.div variants={iconVariants} initial='initial' whileInView={'animate'} className='  absolute bottom-8 z-0 w-[10rem] h-[10rem] sm:w-[20rem] sm:h-[20rem]'>
+      <motion.div variants={iconVariants} transition={{repeatType:'mirror'}} initial='initial' whileInView={'animate'} className='  absolute bottom-8 z-0 w-[10rem] h-[10rem] sm:w-[20rem] sm:h-[20rem]'>
           <Image
           src={at}
           fill
