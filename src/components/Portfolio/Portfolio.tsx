@@ -26,7 +26,7 @@ const portfolios = [
     {
       id:3,
       title:'EtBolo',
-      desc:'Vehicle Test Result Dashboard is a user-friendly web platform for vehicle test companies and government officials. It streamlines the vehicle authorization process by securely storing and accessing test results. With features such as data management, analytics, workflow automation, and collaboration tools, the dashboard promotes efficiency and accuracy in evaluating vehicle compliance with regulations.',
+      desc:'EtBolo is a user-friendly web platform for vehicle test companies and government officials. It streamlines the vehicle authorization process by securely storing and accessing test results. With features such as data management, analytics, workflow automation, and collaboration tools, the dashboard promotes efficiency and accuracy in evaluating vehicle compliance with regulations.',
       image:p2,
       url:'https://stg.tewostechsolutions.com',
       techStack:['Laravel','JavaScript']
