@@ -26,7 +26,7 @@ const services = [
         id:3,
         title:'Data Management',
         description:'I am Skilled in database design and implementation, including MySQL, MongoDB, and PostgreSQL',
-        icon:picture
+        icon:folder
     },
 ]
 
