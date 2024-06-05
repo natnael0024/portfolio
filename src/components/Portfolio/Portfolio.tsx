@@ -2,12 +2,21 @@
 import React,{useRef} from 'react'
 import p1 from '../../../public/p1.png'
 import p2 from '../../../public/tew.png'
+import p3 from '../../../public/yba.png'
 import Item from './Item'
 import {motion, useScroll, useSpring} from 'framer-motion'
 
 const portfolios = [
     {
       id:1,
+      title:'Yemikeray Bet Ale',
+      desc:'Yemikeray Bet Ale is a rental property marketplace connecting owners/agents with renters. It offers secure user accounts, property listing, advanced search, detailed profiles and communication tools.The platform also features an admin dashboard. The platform streamlines the rental process, empowering stakeholders and enhancing the overall experience. Yemikeray Bet Ale revolutionizes the rental housing industry with its efficient and user-friendly solution.',
+      image:p3,
+      url :'https://yba.onrender.com/',
+      techStack:['Django','JavaScript','TailwindCSS']
+    },
+    {
+      id:2,
       title:'Traveler',
       desc:'A travel assistant web platform that provides users with a range of features and services to enhance their travel experiences. It serves as a digital companion that offers valuable information, personalized recommendations, and convenient tools to assist travelers in planning and organizing their trips.',
       image:p1,
@@ -15,20 +24,14 @@ const portfolios = [
       techStack:['Next.JS','TailwindCSS']
     },
     {
-      id:2,
+      id:3,
       title:'EtBolo',
       desc:'Vehicle Test Result Dashboard is a user-friendly web platform for vehicle test companies and government officials. It streamlines the vehicle authorization process by securely storing and accessing test results. With features such as data management, analytics, workflow automation, and collaboration tools, the dashboard promotes efficiency and accuracy in evaluating vehicle compliance with regulations.',
       image:p2,
       url:'https://stg.tewostechsolutions.com',
       techStack:['Laravel','JavaScript']
     },
-    // {
-    //   id:3,
-    //   title:'Traveler',
-    //   desc:'A travel assistant web platform that provides users with a range of features and services to enhance their travel experiences. It serves as a digital companion that offers valuable information, personalized recommendations, and convenient tools to assist travelers in planning and organizing their trips.',
-    //   image:p1,
-    //   techStack:['Next.JS','TailwindCSS']
-    // },
+
 ]
 
 
