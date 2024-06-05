@@ -6,24 +6,26 @@ import computer from '../../public/computer-dynamic-premium.png'
 import folder from '../../public/fav-folder-dynamic-premium.png'
 import picture from '../../public/picture-dynamic-premium.png'
 import paint from '../../public/paint-kit-dynamic-premium.png'
+import sett from '../../public/setting-dynamic-premium.png'
+
 
 const services = [
     {
         id:1,
         title:'FullStack Web Development',
-        description:'As a full-stack developer, I specialize in web development using Next.js, React.js, Node.js, and Laravel. With expertise in Tailwind CSS and Framer Motion, I create dynamic and visually appealing websites customized to your needs.',
+        description:'As a full-stack developer, I specialize in web development using Next.js, React.js, Node.js, Laravel and Django. With expertise in Tailwind CSS and Framer Motion, I create dynamic and visually appealing websites customized to your needs.',
         icon:computer
     },
     {
-        id:2,
-        title:'UI/UX Design',
-        description:'I offer UI/UX design services using Figma and Adobe XD. I create captivating designs that align with your brand and enhance the user experience. Let me bring your ideas to life, whether it\'s a redesign or a brand new interface.',
-        icon:paint
+        id: 2,
+        title:'DevOps and Deployment',
+        description: 'I have expertise in DevOps practices and deployment automation. I can help you set up CI/CD pipelines, containerize your applications, and automate the deployment process using tools like Docker, Kubernetes, Github Action, and Azure cloud services.',
+        icon:sett
     },
     {
         id:3,
-        title:'Landing page design & development',
-        description:'I specialize in creating high-converting landing pages. From stunning designs to seamless user experiences, I ensure your pages drive results. Using JavaScript frameworks, I bring your vision to life with speed and effective call-to-action elements.',
+        title:'Data Management',
+        description:'I am Skilled in database design and implementation, including MySQL, MongoDB, and PostgreSQL',
         icon:picture
     },
 ]

@@ -47,7 +47,7 @@ const Item: React.FC<ItemProps> = ({title,desc,image,url,techStack}) => {
                 <Image
                 src={image}
                 fill
-            alt='image'
+                alt='image'
                 className=' object-cover rounded-md'/>
             </motion.div>
             <motion.div style={{y:textY}} className=' pt-64 sm:pt-0 flex items-center sm:items-start flex-col gap-5 flex-1'>

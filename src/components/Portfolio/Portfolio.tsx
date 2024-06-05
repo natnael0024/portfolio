@@ -15,7 +15,6 @@ const portfolios = [
       url :'https://yba.onrender.com/',
       techStack:['Django','JavaScript','TailwindCSS']
     },
-
     {
       id:2,
       title:'Traveler',
@@ -24,7 +23,6 @@ const portfolios = [
       url:'https://traveler-ten.vercel.app/',
       techStack:['Next.JS','TailwindCSS']
     },
-    
     {
       id:3,
       title:'EtBolo',
