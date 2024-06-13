@@ -6,19 +6,19 @@ import pic from '../../public/natna.png'
 import Link from 'next/link'
 import nodejsIcon from '../../public/nodejs.ico'
 import js from '../../public/js.ico'
-import framer from '../../public/framer.ico'
 import laravel from '../../public/laravel.ico'
 import nextjs from '../../public/nextjs.ico'
 import ts from '../../public/ts.ico'
+import django from '../../public/dj.ico'
 import react from '../../public/reactjs.ico'
 import tw from '../../public/tailwind.ico'
-
-
+import python from '../../public/python_icon.ico'
+import postgre from '../../public/postgre.ico'
 
 
 
 const icons = [
-  nodejsIcon,js,ts,react,nextjs,laravel,tw,framer
+  django,laravel, python,nodejsIcon,js,ts,react,nextjs,tw, postgre
 ]
 
 const textVariants = {
@@ -72,7 +72,7 @@ const Hero = () => {
                 />
         </div>
         <motion.div variants={sliderVariants} transition={{repeat:Infinity,repeatType:'mirror', duration:15}} initial={'initial'} animate={'animate'}  
-        className=' absolute bottom-20 z-0 max-w-[80rem] right-0 text-6xl sm:text-8xl opacity-15'>
+        className=' absolute bottom-20 z-0 max-w-[80rem] right-0 text-6xl sm:text-8xl opacity-20'>
            {/* javascript typescript nodejs nextjs php laravel tailwindcss javascript typescript nodejs nextjs php laravel tailwindcss */}
            <div className=' flex gap-5'>
               {
