@@ -4,6 +4,8 @@ import p1 from '../../../public/p1.png'
 import p2 from '../../../public/tew.png'
 import p3 from '../../../public/yba.png'
 import p4 from '../../../public/natai.png'
+import p5 from '../../../public/teamlink.png'
+
 
 import Item from './Item'
 import {motion, useScroll, useSpring} from 'framer-motion'
@@ -27,6 +29,14 @@ const portfolios = [
     },
     {
       id:3,
+      title:'TeamLink',
+      desc:'TeamLink is a team communication platform that facilitates seamless communication within teams. It provides functionalities for sending messages, creating channels, managing users, and performing other essential team communication tasks. This Platform empowers teams a robust communication features, fostering collaboration and information sharing.',
+      image:p5,
+      url :'https://teamlink.onrender.com/', 
+      techStack:['NodeJs','ExpressJs','ReactJS','SocketIO','Postgresql','Prisma ORM','Supabase']
+    },
+    {
+      id:4,
       title:'Traveler',
       desc:'A travel assistant web platform that provides users with a range of features and services to enhance their travel experiences. It serves as a digital companion that offers valuable information, personalized recommendations, and convenient tools to assist travelers in planning and organizing their trips.',
       image:p1,
@@ -34,7 +44,7 @@ const portfolios = [
       techStack:['Next.JS','TailwindCSS']
     },
     {
-      id:4,
+      id:5,
       title:'EtBolo',
       desc:'EtBolo is a user-friendly web platform for vehicle test companies and government officials. It streamlines the vehicle authorization process by securely storing and accessing test results. With features such as data management, analytics, workflow automation, and collaboration tools, the dashboard promotes efficiency and accuracy in evaluating vehicle compliance with regulations.',
       image:p2,
