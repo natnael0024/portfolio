@@ -17,7 +17,7 @@ const socialMedias = [
         id:3,
         name:'Github',
         icon:<FaGithub/>,
-        link:'https://github.com/Natnael0023'
+        link:'https://github.com/natnael0024'
     },
 ]
 
