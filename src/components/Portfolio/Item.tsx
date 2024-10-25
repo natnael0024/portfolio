@@ -56,7 +56,7 @@ const Item: React.FC<ItemProps> = ({id,title,desc,image,url,techStack}) => {
                 <h3 className=' text-gray-300 px-3 sm:px-0'>{desc}</h3>
                 <div className=' flex gap-2 text-amber-300'>
                     {techStack.map((tech,index)=>(
-                        <h3 key={index}>#{tech}</h3>
+                        <h3 key={index}>{tech}</h3>
                     ))}
                 </div>
                 {id !== 5 &&
