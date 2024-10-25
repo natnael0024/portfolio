@@ -20,6 +20,7 @@ const variants = {
 }
 
 interface ItemProps {
+    id: Number,
     title: string;
     desc: string;
     image: string;
@@ -27,7 +28,7 @@ interface ItemProps {
     techStack: string[];
   }
 
-const Item: React.FC<ItemProps> = ({title,desc,image,url,techStack}) => {
+const Item: React.FC<ItemProps> = ({id,title,desc,image,url,techStack}) => {
 
     const useParallax = (value: MotionValue<number>, distance:number) => {
         return useTransform(value, [0,1], [-distance, distance])
@@ -58,8 +59,10 @@ const Item: React.FC<ItemProps> = ({title,desc,image,url,techStack}) => {
                         <h3 key={index}>#{tech}</h3>
                     ))}
                 </div>
+                {id !== 5 &&
                 <Link href={url} target="_blank" rel="noopener noreferrer"
                 className=' bg-sky-400 p-2 px-10 rounded'>See demo</Link>
+                }
             </motion.div>
         </div>
     </motion.section>

@@ -25,7 +25,7 @@ const portfolios = [
       desc:'Natai is an AI-powered chatbot that aims to be your friendly and knowledgeable companion. Developed using the Google Gemini API, Natai is designed to engage in natural conversations, answer questions, and assist you with a variety of tasks.',
       image:p4,
       url :'https://nataichat.onrender.com/', 
-      techStack:['Python','Django','ReactJS','Postgresql','Supabase']
+      techStack:['Python','FastAPI','ReactJS','Postgresql','Supabase']
     },
     {
       id:3,
@@ -46,7 +46,7 @@ const portfolios = [
     {
       id:5,
       title:'EtBolo',
-      desc:'EtBolo is a user-friendly web platform for vehicle test companies and government officials. It streamlines the vehicle authorization process by securely storing and accessing test results. With features such as data management, analytics, workflow automation, and collaboration tools, the dashboard promotes efficiency and accuracy in evaluating vehicle compliance with regulations.',
+      desc:'EtBolo is a user-friendly web platform for vehicle test companies and government officials. It streamlines the vehicle authorization process by securely storing and accessing test results. With features such as data management, analytics, workflow automation, and collaboration tools, the dashboard promotes efficiency and accuracy in evaluating vehicle compliance with regulations. (NB: Due to NDA I am not allowed to show demo)',
       image:p2,
       url:'https://stg.tewostechsolutions.com',
       techStack:['Laravel','JavaScript']
@@ -76,7 +76,7 @@ const Portfolio = () => {
         <motion.div style={{scaleX}} className=' min-h-[0.2rem] w-full bg-sky-400'></motion.div>
       </div>
       {portfolios.map(portfolio=>(
-        <Item key={portfolio.id} title={portfolio.title} desc={portfolio.desc} image={portfolio.image.src} url={portfolio.url} techStack={portfolio.techStack} />
+        <Item key={portfolio.id} id={portfolio.id} title={portfolio.title} desc={portfolio.desc} image={portfolio.image.src} url={portfolio.url} techStack={portfolio.techStack} />
       ))}
     </div>
   )
