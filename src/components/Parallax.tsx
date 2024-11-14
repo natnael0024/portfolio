@@ -41,7 +41,7 @@ const Parallax = ({type}) => {
           {type==='services'? 'WHAT I DO':'what I did'}
         </motion.h1>
         <motion.div style={{x:bgX}} variants={iconVariants} transition={{duration:2, repeat:Infinity, repeatType:'mirror'}} initial='initial' whileInView={'animate'}
-          className=' bottom-10 left-20 text-9xl  absolute  w-[15rem] h-[15rem]' >
+          className=' hidden sm:block bottom-10 left-20 text-9xl  absolute  w-[15rem] h-[15rem]' >
           <Image
             src={rocket1}
             fill
