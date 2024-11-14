@@ -65,12 +65,12 @@ const Hero = () => {
                  className=' bg-white text-black rounded-lg p-2 px-5'>Contact</Link>
            </motion.div>
         </motion.div>
-        <div className=' border-b-4 overflow-hidden border-opacity-15 border-sky-400 rounded-full relative z-30 w-[30rem] h-[25rem] lg:w-[20rem] lg:h-[30rem]'>
+        <div className=' border-b-4 overflow-hidden border-opacity-15 border-sky-400 rounded-full relative z-30 w-[15rem] h-[15rem] lg:w-[20rem] lg:h-[30rem]'>
             <Image
                 src={pic}
                 fill
                 alt='pic'
-                className=' absolute object-cover opacity-100 z-30 '
+                className='sm:absolute object-cover opacity-100 z-30 '
                 />
         </div>
         <motion.div variants={sliderVariants} transition={{repeat:Infinity,repeatType:'mirror', duration:15}} initial={'initial'} animate={'animate'}  

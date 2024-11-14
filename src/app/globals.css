@@ -10,7 +10,7 @@
 }
 
 html{
-  scroll-snap-type:y mandatory;
+  /* scroll-snap-type:y mandatory; */
   scroll-behavior: smooth;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 

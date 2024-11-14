@@ -25,8 +25,6 @@ export default function RootLayout({
       <div id="stars"></div>
       <div id='stars2'></div>
       <div id='stars3'></div>
-      <div id='stars4'></div>
-
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>

@@ -11,12 +11,12 @@ import Skillset from '@/components/Skillset'
 
 export default function Home() {
   return (
-    <main className="">
+    <main className=" flex flex-col ">
       <section id='Home'>
         <Navbar/>
         <Hero/>
       </section>
-      <section>
+      <section className=' hidden sm:block'>
         <Parallax type={'services'}/>
       </section>
       <section id='Services'>

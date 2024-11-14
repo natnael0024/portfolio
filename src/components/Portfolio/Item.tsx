@@ -6,7 +6,7 @@ import {MotionValue, motion, useScroll, useTransform} from 'framer-motion'
 
 const variants = {
     initial:{
-        y:10,
+        y:1,
         opacity:0
     },
     animate:{
@@ -44,7 +44,7 @@ const Item: React.FC<ItemProps> = ({id,title,desc,image,url,techStack}) => {
   return (
     <motion.section id='Portfolio'  className='  flex flex-col gap-3 '>
         <div  className='  h-full lg:w-[60rem] mx-auto flex flex-col lg:flex-row gap-7 justify-center items-center'>
-            <motion.div ref={ref} className=' relative w-[25rem] h-[30rem] lg:w-[30rem] lg:h-[20rem] md:w-[15rem] md:h-[15rem]'>
+            <motion.div ref={ref} className=' relative hidden sm:block w-[10rem] min-h-[10rem] lg:w-[30rem] lg:h-[20rem] md:w-[15rem] md:h-[15rem]'>
                 <Image
                 src={image}
                 fill
