@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import {motion} from 'framer-motion'
 import { FaLinkedin } from "react-icons/fa6";
-import { FaXTwitter, FaGithub } from "react-icons/fa6";
+import { FaXTwitter, FaGithub, FaHackerrank } from "react-icons/fa6";
 
 
 const socialMedias = [
@@ -14,10 +14,16 @@ const socialMedias = [
         link:'https://www.linkedin.com/in/nathnael-legesse-6239591a2/'
     },
     {
-        id:3,
+        id:2,
         name:'Github',
         icon:<FaGithub/>,
         link:'https://github.com/natnael0024'
+    },
+    {
+        id:3,
+        name:'HackerRank',
+        icon:<FaHackerrank/>,
+        link:'https://www.hackerrank.com/certificates/3b09704215a1'
     },
 ]
 
