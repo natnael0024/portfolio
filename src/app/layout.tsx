@@ -20,6 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <div id="stars"></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
       <body className=' bg-primary text-white '>
       <div className='gradient'></div>
         <div className=' relative'>
