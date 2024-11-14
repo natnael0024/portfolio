@@ -52,9 +52,11 @@ const Hero = () => {
     className=' relative  z-10 flex items-center flex-col sm:flex-row sm:justify-between'>
         <motion.div variants={textVariants} initial={'initial'} animate={'animate'} className=' flex flex-col items-start z gap-5'>
            <motion.div  className='  flex flex-col gap-4'>
+                <motion.h1 variants={textVariants}  className=' mt-20 sm:mt-0 text-center sm:text-left text-3xl text-white tracking-widest uppercase '>
+                  Hi there,</motion.h1>
                 <motion.h1 variants={textVariants}  className=' mt-20 sm:mt-0 text-center sm:text-left text-3xl text-cyan-500 tracking-widest uppercase '>
-                  Natnael Legesse</motion.h1>
-                <motion.h1 variants={textVariants} className=' text-center sm:text-left text-4xl sm:text-7xl font-bold'>WEB DEVELOPER</motion.h1>
+                  I'm Natnael Legesse</motion.h1>
+                <motion.h1 variants={textVariants} className=' text-center sm:text-left text-4xl sm:text-6xl font-bold'>DEVELOPER</motion.h1>
            </motion.div>
            <motion.div variants={textVariants} className=' justify-center sm:justify-start  w-full flex gap-4 mt-10 z-40'>
                 <Link href={'#Portfolio'}
@@ -63,7 +65,7 @@ const Hero = () => {
                  className=' bg-white text-black rounded-lg p-2 px-5'>Contact</Link>
            </motion.div>
         </motion.div>
-        <div className=' border-4 overflow-hidden border-opacity-15 border-sky-400 rounded-full relative z-30 w-[30rem] h-[25rem] lg:w-[40rem] lg:h-[40rem]'>
+        <div className=' border-b-4 overflow-hidden border-opacity-15 border-sky-400 rounded-full relative z-30 w-[30rem] h-[25rem] lg:w-[20rem] lg:h-[30rem]'>
             <Image
                 src={pic}
                 fill

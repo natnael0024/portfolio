@@ -4,6 +4,7 @@ import axios from 'axios'
 import Image from 'next/image'
 import {MotionValue, motion, useScroll, useTransform} from 'framer-motion'
 import at from '../../public/at-dynamic-premium.png'
+import mailbox from '../../public/open-mailbox-with-raised-flag.png'
 import {toast} from 'react-toastify'
 
 const Contact = () => {
@@ -94,7 +95,7 @@ const Contact = () => {
 
       <motion.div variants={iconVariants} transition={{repeat:Infinity,repeatType:'mirror', duration:20}} initial='initial' whileInView={'animate'} className='  absolute bottom-8 z-0 w-[10rem] h-[10rem] sm:w-[20rem] sm:h-[20rem]'>
           <Image
-          src={at}
+          src={mailbox}
           fill
           alt='image'
           className=' z-0'/>

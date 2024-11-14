@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Services from '@/components/Services'
 import Portfolio from '@/components/Portfolio/Portfolio'
 import Contact from '@/components/Contact'
+import Skillset from '@/components/Skillset'
 
 export default function Home() {
   return (
@@ -21,7 +22,10 @@ export default function Home() {
       <section id='Services'>
         <Services/>
       </section>
-      <Portfolio/>
+      <section id='Skills'>
+        <Skillset/>
+      </section>
+        <Portfolio/>
       <section id='Contact'>
         <Contact/>
       </section>

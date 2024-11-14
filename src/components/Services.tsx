@@ -8,25 +8,32 @@ import picture from '../../public/picture-dynamic-premium.png'
 import paint from '../../public/paint-kit-dynamic-premium.png'
 import sett from '../../public/setting-dynamic-premium.png'
 
+import airplane from '../../public/airplane-arrival.png'
+import technologist from '../../public/man-technologist.png'
+import folder1 from '../../public/open-file-folder.png'
+
+
+
+
 
 const services = [
     {
         id:1,
         title:'FullStack Web Development',
         description:'As a full-stack developer, I specialize in web development using Next.js, React.js, Node.js, Laravel and Django. With expertise in Tailwind CSS and Framer Motion, I create dynamic and visually appealing websites customized to your needs.',
-        icon:computer
+        icon:technologist
     },
     {
         id: 2,
         title:'DevOps and Deployment',
         description: 'I have expertise in DevOps practices and deployment automation. I can help you set up CI/CD pipelines, containerize your applications, and automate the deployment process using tools like Docker, Kubernetes, Github Action, and Azure cloud services.',
-        icon:sett
+        icon:airplane
     },
     {
         id:3,
         title:'Data Management',
         description:'I am Skilled in database design and implementation, including MySQL, MongoDB, and PostgreSQL',
-        icon:folder
+        icon:folder1
     },
 ]
 
@@ -75,7 +82,7 @@ const middleVariants = {
 const Services = () => {
   return (
     <motion.div className=' px-3 sm:px-0  relative h-full flex flex-col items-center justify-center'>
-        <h1 className=' absolute top-10 text-3xl sm:text-5xl  rounded-full p-2 px-4 w-full text-center font-bold'>Provide Creative Solutions</h1>
+        <h1 className=' absolute top-10 text-3xl sm:text-5xl  rounded-full p-2 px-4 w-full text-center font-bold'>Provide <span className=' text-sky-400'>Creative</span> Solutions</h1>
         <div className=' flex flex-col lg:flex-row justify-between gap-2 sm:gap-10'>
             {services.map(service=>(
                 <motion.div variants={service.id === 1 ? leftVariants : service.id ===3? rightVariants: middleVariants} initial={'initial'} whileInView={'animate'} 
