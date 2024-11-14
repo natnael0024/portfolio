@@ -5,6 +5,8 @@ import Sidebar from '@/components/Sidebar'
 import second from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import icon from '@/app/favicon.ico'
+import i from '../../public/binary-code.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +25,12 @@ export default function RootLayout({
       <div id="stars"></div>
       <div id='stars2'></div>
       <div id='stars3'></div>
+      <div id='stars4'></div>
+
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
+
       <body className=' bg-primary text-white '>
       <div className='gradient'></div>
         <div className=' relative'>

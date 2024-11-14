@@ -70,7 +70,7 @@ const Hero = () => {
                 src={pic}
                 fill
                 alt='pic'
-                className=' absolute object-cover opacity-70 z-30 '
+                className=' absolute object-cover opacity-100 z-30 '
                 />
         </div>
         <motion.div variants={sliderVariants} transition={{repeat:Infinity,repeatType:'mirror', duration:15}} initial={'initial'} animate={'animate'}  
