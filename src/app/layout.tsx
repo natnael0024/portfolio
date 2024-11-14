@@ -22,9 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <div id="stars"></div>
-      <div id='stars2'></div>
-      <div id='stars3'></div>
+      <div id="stars" className=' hidden sm:block'></div>
+      <div id='stars2' className=' hidden sm:block'></div>
+      <div id='stars3' className=' hidden sm:block'></div>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
