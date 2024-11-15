@@ -52,7 +52,7 @@ const Item: React.FC<ItemProps> = ({id,title,desc,image,url,techStack}) => {
                 className=' object-cover rounded-md'/>
             </motion.div>
             <motion.div style={{y:textY}} className=' pt-64 sm:pt-0 flex items-center sm:items-start flex-col gap-5 flex-1'>
-                <h1 className=' text-6xl font-bold'>{title}</h1>
+                <h1 className=' text-3xl sm:text-6xl font-bold'>{title}</h1>
                 <h3 className=' text-gray-300 px-3 sm:px-0'>{desc}</h3>
                 <div className=' flex gap-2 text-amber-300'>
                     {techStack.map((tech,index)=>(
