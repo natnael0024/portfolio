@@ -138,9 +138,9 @@ const middleVariants = {
 
 const Skillset = () => {
   return (
-    <div className=' mt-96 sm:mt-0 px-3 sm:px-0  relative h-full flex flex-col items-center justify-center'>
-        <h1 className='  absolute top-10 text-3xl sm:text-5xl  rounded-full p-2 px-4 w-full text-center font-bold'>Skill <span className=' text-sky-400'>Set</span></h1>
-        <div className=' mt-96 sm:mt-0 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-between gap-2 sm:gap-10'>
+    <div className='   px-3 sm:px-0  relative h-full flex flex-col items-center justify-center'>
+        <h1 className='  absolute top-10 text-3xl sm:text-5xl  rounded-full p-2 px-4 w-full text-center font-bold mb-3'>Skill <span className=' text-sky-400'>Set</span></h1>
+        <div className='  grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-between gap-2 sm:gap-10'>
             {skills.map(skill=>(
                 <div key={skill.id}
                 className='  border-sky-400 rounded-lg p-4 px-16 hover:scale-110 duration-300'>

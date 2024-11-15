@@ -30,7 +30,7 @@ const portfolios = [
     {
       id:3,
       title:'TeamLink',
-      desc:'TeamLink is a team communication platform that facilitates seamless communication within teams. It provides functionalities for sending messages, creating channels, managing users, and performing other essential team communication tasks. This Platform empowers teams a robust communication features, fostering collaboration and information sharing.',
+      desc:'TeamLink is a team communication platform that facilitates seamless communication within teams. It provides functionalities for sending messages, creating channels, managing users, and performing other essential team communication tasks.',
       image:p5,
       url :'https://teamlink.onrender.com/', 
       techStack:['NodeJs','ExpressJs','ReactJS','SocketIO','Postgresql','Prisma ORM','Supabase']
@@ -46,7 +46,7 @@ const portfolios = [
     {
       id:5,
       title:'EtBolo',
-      desc:'EtBolo is a user-friendly web platform for vehicle test companies and government officials. It streamlines the vehicle authorization process by securely storing and accessing test results. With features such as data management, analytics, workflow automation, and collaboration tools, the dashboard promotes efficiency and accuracy in evaluating vehicle compliance with regulations. (NB: Due to NDA I am not allowed to show demo)',
+      desc:'EtBolo is a user-friendly web platform for vehicle test companies and government officials. It streamlines the vehicle authorization process by securely storing and accessing test results. With features such as data management, analytics, workflow automation, and collaboration tools, the dashboard promotes efficiency and accuracy in evaluating vehicle compliance with regulations. (Due to NDA I am not allowed to show demo)',
       image:p2,
       url:'https://stg.tewostechsolutions.com',
       techStack:['Laravel','JavaScript']
@@ -72,8 +72,8 @@ const Portfolio = () => {
   return (
     <div ref={ref} className=' h-full relative '>
       <div className=' sticky sm:top-2 z-30'>
-        <h1 className=' text-center text-6xl font-bold text-sky-400'>Portfolio</h1>
-        <motion.div style={{scaleX}} className=' min-h-[0.2rem] w-full bg-sky-400'></motion.div>
+        <h1 className=' text-center text-6xl font-bold text-sky-400 '>Portfolio</h1>
+        <motion.div style={{scaleX}} className=' min-h-[0.2rem] w-full bg-sky-400 mb-4 sm:mb-0'></motion.div>
       </div>
       {portfolios.map(portfolio=>(
         <Item key={portfolio.id} id={portfolio.id} title={portfolio.title} desc={portfolio.desc} image={portfolio.image.src} url={portfolio.url} techStack={portfolio.techStack} />

@@ -78,7 +78,7 @@ const Contact = () => {
         <h1 className=' text-6xl text-center sm:text-8xl font-bold'>Contact</h1>
       </motion.div>
 
-      <motion.div style={{y}} className=' z-30  w-full px-3 sm:px-0'>
+      <motion.div style={{y}} className=' mt-20 sm:mt-0 z-30  w-full px-3 sm:px-0'>
         <form action="#" className="space-y-8 flex flex-col" onSubmit={handleSubmit}>
           <div>
               <input type="email" id="email" className="shadow-sm  border-2    rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  bg-transparent  focus:ring-2   focus:ring-amber-300 focus:border-amber-300 shadow-sm-light" placeholder="name@email.com" required/>
@@ -106,8 +106,6 @@ const Contact = () => {
           </span>
           <span>|</span>
           <span>Natnael Legesse</span>
-          <span>|</span>
-          <span>All rights reserved</span>
         </div>
     </div>
   )

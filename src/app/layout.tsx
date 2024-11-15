@@ -45,7 +45,7 @@ export default function RootLayout({
         theme="light"
         />
           <Sidebar/>
-          <div className=' lg:px-48 md:px-4'>
+          <div className=' px-2 lg:px-48 md:px-4'>
             {children}
           </div>
         </div>
