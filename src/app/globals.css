@@ -109,7 +109,7 @@ body {
 
 @keyframes animStar {
   from {
-    transform: translateY(-7500px);
+    transform: translateY(-7400px);
   }
   to {
     transform: translateY(-7900px);
