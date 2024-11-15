@@ -40,7 +40,7 @@ const Item: React.FC<ItemProps> = ({id,title,desc,image,url,techStack}) => {
     target:ref,
   })
 
-  const textY = useParallax(scrollYProgress, 300)
+  const textY = useParallax(scrollYProgress, 0)
   return (
     <motion.section id='Portfolio'  className='  flex flex-col gap-3 '>
         <div  className='  h-full lg:w-[60rem] mx-auto flex flex-col lg:flex-row gap-7 justify-center items-center'>
