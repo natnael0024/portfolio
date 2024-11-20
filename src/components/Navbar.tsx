@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import {motion} from 'framer-motion'
 import { FaLinkedin } from "react-icons/fa6";
-import { FaXTwitter, FaGithub, FaHackerrank } from "react-icons/fa6";
+import { FaXTwitter, FaGithub, FaHackerrank, FaBlog } from "react-icons/fa6";
 
 
 const socialMedias = [
@@ -25,6 +25,13 @@ const socialMedias = [
         icon:<FaHackerrank/>,
         link:'https://www.hackerrank.com/certificates/3b09704215a1'
     },
+    {
+        id:3,
+        name:'Blog',
+        icon:<FaBlog/>,
+        link:'https://chillandcode.onrender.com/'
+    },
+    
 ]
 
 const Navbar = () => {

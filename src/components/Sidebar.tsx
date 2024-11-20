@@ -58,6 +58,9 @@ const Sidebar = () => {
                             <Link href={`#${menu}`} onClick={()=>setToggle(false)}>{menu}</Link>
                         </motion.li>
                     ))}
+                    <motion.li variants={variants} whileHover={{scale:1.1}} whileTap={{scale:0.9}} >
+                            <Link href={`https://chillandcode.onrender.com/`} target='blank' onClick={()=>setToggle(false)}>Blog</Link>
+                        </motion.li>
                     </motion.ul>
                 </motion.div>
             )}
