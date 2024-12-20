@@ -20,20 +20,20 @@ const services = [
     {
         id:1,
         title:'FullStack Web Development',
-        description:'As a full-stack developer, I specialize in web development using Next.js, React.js, Node.js, Laravel and Django. With expertise in Tailwind CSS and Framer Motion, I create dynamic and visually appealing websites customized to your needs.',
-        icon:technologist
+        // description:'As a full-stack developer, I specialize in web development using Next.js, React.js, Node.js, Laravel and Django. With expertise in Tailwind CSS and Framer Motion, I create dynamic and visually appealing websites customized to your needs.',
+        icon:'👨🏽‍💻'
     },
     {
         id: 2,
         title:'DevOps and Deployment',
-        description: 'I have expertise in DevOps practices and deployment automation. I can help you set up CI/CD pipelines, containerize your applications, and automate the deployment process using tools like Docker, Kubernetes, Github Action, and Azure cloud services.',
-        icon:airplane
+        // description: 'I have expertise in DevOps practices and deployment automation. I can help you set up CI/CD pipelines, containerize your applications, and automate the deployment process using tools like Docker, Kubernetes, Github Action, and Azure cloud services.',
+        icon:'🚢'
     },
     {
         id:3,
-        title:'Data Management',
-        description:'I am Skilled in database design and implementation, including MySQL, MongoDB, and PostgreSQL',
-        icon:folder1
+        title:'Database Design and Implementation',
+        // description:'I am Skilled in database design and implementation, including MySQL, MongoDB, and PostgreSQL',
+        icon:'🗂️'
     },
 ]
 
@@ -88,15 +88,16 @@ const Services = () => {
                 <motion.div variants={service.id === 1 ? leftVariants : service.id ===3? rightVariants: middleVariants} initial={'initial'} whileInView={'animate'} 
                 className=' border border-sky-400 border-opacity-15 mt-5 bg-gray-900 p-2 hover:shadow-xl hover:shadow-black  lg:w-[22rem] flex flex-col items-center gap-5 rounded-md'>
                     <div className='  sm:mt-0 flex  rounded-full relative w-[3rem] h-[3rem] sm:w-[5rem] sm:h-[5rem]'>
-                        <Image
+                        {/* <Image
                         src={service.icon}
                         fill
                         alt='ic'
-                        className=''/>
+                        className=''/> */}
+                        <span className=' text-6xl'>{service.icon}</span>
                     </div>
                     <div className=' flex flex-col gap-5 items-center'>
                         <h1 className=' text-2xl sm:text-3xl text-center font-bold'>{service.title}</h1>
-                        <h3 className=' hidden sm:block text-gray-400 text-sm text-justify'>{service.description}</h3>
+                        {/* <h3 className=' hidden sm:block text-gray-400 text-sm text-justify'>{service.description}</h3> */}
                     </div>
                 </motion.div>
             ))}

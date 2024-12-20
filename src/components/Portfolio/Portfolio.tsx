@@ -6,6 +6,8 @@ import p3 from '../../../public/yba.png'
 import p4 from '../../../public/natai.png'
 import p5 from '../../../public/teamlink.png'
 import p6 from '../../../public/chillncode.png'
+import p7 from '../../../public/natai-tgbot.png'
+
 
 import Item from './Item'
 import {motion, useScroll, useSpring} from 'framer-motion'
@@ -22,13 +24,21 @@ const portfolios = [
     {
       id:2,
       title:'NatAI chatbot',
-      desc:'Natai is an AI-powered chatbot that aims to be your friendly and knowledgeable companion. Developed using the Google Gemini API, Natai is designed to engage in natural conversations, answer questions, and assist you with a variety of tasks.',
+      desc:'Natai is an AI-powered chatbot that aims to be your friendly and knowledgeable companion. Developed using the Google Gemini Model, Natai is designed to engage in natural conversations, answer questions, and assist you with a variety of tasks.',
       image:p4,
       url :'https://nataichat.onrender.com/', 
-      techStack:['Python','FastAPI','ReactJS','Postgresql','Supabase']
+      techStack:['Python','FastAPI','ReactJS','Postgresql','Supabase','Google Gemini Model']
     },
     {
       id:3,
+      title:'NatAI Telegram chatbot',
+      desc:'NataiBot is an AI-powered chatbot designed to bring the capabilities of NatAI to Telegram users. NataiBot allows you to engage in natural conversations, get answers to your questions, and receive help with various tasks within the Telegram app. ',
+      image:p7,
+      url :'https://t.me/nat_AI_bot', 
+      techStack:['Python','Postgresql','Google Gemini Model']
+    },
+    {
+      id:4,
       title:'chill&code',
       desc:'chill&code is a tech-focused blogging project designed to explore and share the latest trends, innovations, and insights in the world of technology. This project aims to provide valuable content for tech enthusiasts, professionals, and anyone interested in staying updated on emerging technologies, product reviews, how-to guides, and industry news. ',
       image:p6,
@@ -36,15 +46,15 @@ const portfolios = [
       techStack:['NodeJs','ReactJS','Postgresql','Supabase']
     },
     {
-      id:4,
+      id:5,
       title:'TeamLink',
       desc:'TeamLink is a team communication platform that facilitates seamless communication within teams. It provides functionalities for sending messages, creating channels, managing users, and performing other essential team communication tasks.',
       image:p5,
       url :'https://teamlink.onrender.com/', 
-      techStack:['NodeJs','ExpressJs','ReactJS','SocketIO','Postgresql','Prisma ORM','Supabase']
+      techStack:['NodeJs','ExpressJs','ReactJS','SocketIO','Postgresql','PrismaORM','Supabase']
     },
     {
-      id:5,
+      id:6,
       title:'Traveler',
       desc:'A travel assistant web platform that provides users with a range of features and services to enhance their travel experiences. It serves as a digital companion that offers valuable information, personalized recommendations, and convenient tools to assist travelers in planning and organizing their trips.',
       image:p1,
@@ -52,7 +62,7 @@ const portfolios = [
       techStack:['Next.JS','TailwindCSS']
     },
     {
-      id:6,
+      id:7,
       title:'EtBolo',
       desc:'EtBolo is a user-friendly web platform for vehicle test companies and government officials. It streamlines the vehicle authorization process by securely storing and accessing test results. With features such as data management, analytics, workflow automation, and collaboration tools, the dashboard promotes efficiency and accuracy in evaluating vehicle compliance with regulations. (Due to NDA I am not allowed to show demo)',
       image:p2,
