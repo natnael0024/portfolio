@@ -68,7 +68,7 @@ const Item: React.FC<ItemProps> = ({id,title,desc,image,url,techStack}) => {
                         <h3 className='border border-amber-400 border-opacity-40 px-1 rounded ' key={index}>{tech}</h3>
                     ))}
                 </div>
-                {id !== 7 &&
+                {id !== 8 &&
                 <Link href={url} target="_blank" rel="noopener noreferrer"
                 className=' bg-sky-400 p-2 px-10 rounded'>Visit</Link>
                 }
