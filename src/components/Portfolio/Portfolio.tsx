@@ -60,16 +60,16 @@ const portfolios = [
       desc:'TeamLink is a team communication platform that facilitates seamless communication within teams. It provides functionalities for sending messages, creating channels, managing users, and performing other essential team communication tasks.',
       image:p5,
       url :'https://teamlink.onrender.com/', 
-      techStack:['NodeJs','ExpressJs','ReactJs','SocketIO','Postgresql','PrismaORM','Supabase']
+      techStack:['NodeJs','ExpressJs','ReactJs','Socket.io','Postgresql','PrismaORM','Supabase']
     },
-    {
-      id:7,
-      title:'Traveler',
-      desc:'A travel assistant web platform that provides users with a range of features and services to enhance their travel experiences. It serves as a digital companion that offers valuable information, personalized recommendations, and convenient tools to assist travelers in planning and organizing their trips.',
-      image:p1,
-      url:'https://traveler-ten.vercel.app/',
-      techStack:['Next.JS','TailwindCSS']
-    },
+    // {
+    //   id:7,
+    //   title:'Traveler',
+    //   desc:'A travel assistant web platform that provides users with a range of features and services to enhance their travel experiences. It serves as a digital companion that offers valuable information, personalized recommendations, and convenient tools to assist travelers in planning and organizing their trips.',
+    //   image:p1,
+    //   url:'https://traveler-ten.vercel.app/',
+    //   techStack:['Next.JS','TailwindCSS']
+    // },
     {
       id:8,
       title:'EtBolo',

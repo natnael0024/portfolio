@@ -26,7 +26,8 @@ export default function RootLayout({
       <div id='stars2' className=' '></div>
       <div id='stars3' className=' '></div>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
+        <link rel="icon" href="../../public/natna.png" sizes="any" />
       </head>
 
       <body className=' bg-primary text-white '>
