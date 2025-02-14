@@ -8,6 +8,8 @@ import p5 from '../../../public/teamlink.png'
 import p6 from '../../../public/chillncode.png'
 import p7 from '../../../public/natai-tgbot.png'
 import p8 from '../../../public/tti.png'
+import p9 from '../../../public/mystore.png'
+
 
 
 import Item from './Item'
@@ -56,11 +58,11 @@ const portfolios = [
     },
     {
       id:6,
-      title:'TeamLink',
-      desc:'TeamLink is a team communication platform that facilitates seamless communication within teams. It provides functionalities for sending messages, creating channels, managing users, and performing other essential team communication tasks.',
-      image:p5,
-      url :'https://teamlink.onrender.com/', 
-      techStack:['NodeJs','ExpressJs','ReactJs','Socket.io','Postgresql','PrismaORM','Supabase']
+      title:'MyStore',
+      desc:'MyStore is an eCommerce platform built with Laravel (backend) and Next.js (frontend). It offers a seamless shopping experience and an intuitive admin dashboard to manage products, orders, users, roles, permissions and view analytics. Perfect for businesses of all sizes, MyStore combines performance, security, and flexibility.',
+      image:p9,
+      url :'https://mystore-a0s0.onrender.com', 
+      techStack:['Laravel','NextJs','Postgresql']
     },
     // {
     //   id:7,
