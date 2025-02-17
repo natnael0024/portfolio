@@ -19,7 +19,7 @@ const portfolios = [
     {
       id:1,
       title:'Yemikeray Bet Ale',
-      desc:'Yemikeray Bet Ale is a rental property marketplace connecting owners/agents with renters. It offers secure user accounts, property listing, advanced search, detailed profiles and communication tools.The platform also features an admin dashboard. The platform streamlines the rental process, empowering stakeholders and enhancing the overall experience. Yemikeray Bet Ale revolutionizes the rental housing industry with its efficient and user-friendly solution.',
+      desc:'Yemikeray Bet Ale is a rental property marketplace connecting owners/agents with renters. It offers secure user accounts, property listing, advanced search, detailed profiles and communication tools.The platform also features an admin dashboard.',
       image:p3,
       url :'https://yba.onrender.com/',
       techStack:['Django','JavaScript','TailwindCSS','Postgresql','Supabase']
@@ -99,14 +99,16 @@ const Portfolio = () => {
   })
 
   return (
-    <div ref={ref} className=' h-full relative '>
+    <div ref={ref} className=' mt-96 md:mt-10 h-full relative '>
       <div className=' sticky sm:top-2 z-30'>
         <h1 className=' text-center text-6xl font-bold text-sky-400 '>Portfolio</h1>
         <motion.div style={{scaleX}} className=' min-h-[0.2rem] w-full bg-sky-400 mb-4 sm:mb-0'></motion.div>
       </div>
+      <div className=' mt-24 md:mt-2'>
       {portfolios.map(portfolio=>(
         <Item key={portfolio.id} id={portfolio.id} title={portfolio.title} desc={portfolio.desc} image={portfolio.image.src} url={portfolio.url} techStack={portfolio.techStack} />
       ))}
+      </div>
     </div>
   )
 }

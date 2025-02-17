@@ -25,12 +25,12 @@ const socialMedias = [
         icon:<FaHackerrank/>,
         link:'https://www.hackerrank.com/certificates/3b09704215a1'
     },
-    {
-        id:3,
-        name:'Blog',
-        icon:<FaBlog/>,
-        link:'https://chillandcode.onrender.com/'
-    },
+    // {
+    //     id:3,
+    //     name:'Blog',
+    //     icon:<FaBlog/>,
+    //     link:'https://chillandcode.onrender.com/'
+    // },
     
 ]
 

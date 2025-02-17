@@ -81,8 +81,8 @@ const middleVariants = {
 
 const Services = () => {
   return (
-    <motion.div className=' mt-16 sm:mt-0 px-3 sm:px-0  relative h-full flex flex-col items-center justify-center'>
-        <h1 className=' absolute top-10 text-3xl sm:text-5xl  rounded-full p-2 px-4 w-full text-center font-bold'>Turn Ideas into <span className=' text-sky-400'>Reality</span> </h1>
+    <motion.div className=' mt-48 sm:mt-0 px-3 sm:px-0  relative h-full flex flex-col items-center justify-center'>
+        <h1 className=' hidden  absolute top-10 text-3xl sm:text-5xl  rounded-full p-2 px-4 w-full text-center font-bold'>Turn Ideas into <span className=' text-sky-400'>Reality</span> </h1>
         <div className=' mt-72 mb-96 sm:mt-0 sm:mb-0 flex flex-col lg:flex-row justify-between gap-2 sm:gap-10'>
             {services.map(service=>(
                 <motion.div variants={service.id === 1 ? leftVariants : service.id ===3? rightVariants: middleVariants} initial={'initial'} whileInView={'animate'} 

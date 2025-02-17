@@ -43,7 +43,7 @@ const Item: React.FC<ItemProps> = ({id,title,desc,image,url,techStack}) => {
   const textY = useParallax(scrollYProgress, 0)
   return (
     <motion.section id='Portfolio'  className='  flex flex-col gap-3 '>
-        <div  className='  h-full lg:w-[60rem] mx-auto flex flex-col lg:flex-row gap-7 justify-center items-center'>
+        <div  className=' mb-10  h-full lg:w-[60rem] mx-auto flex flex-col lg:flex-row gap-7 justify-center items-center'>
             <motion.div ref={ref} className=' relative  sm:block w-full min-h-[10rem] sm:w-[30rem] sm:h-[20rem]'>
                 {id == 2? 
                 <Image

@@ -28,6 +28,7 @@ export const POST = async(req:NextRequest, res:NextResponse)=>{
         await transporter.sendMail(mailOptions)
         return new NextResponse(JSON.stringify({message:'Sent! Thanks for emailing me'}),{status:200})
     }catch(error){
+        throw new error
         return new NextResponse(JSON.stringify({message:error}),{status:500})
     }
 }

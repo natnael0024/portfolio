@@ -97,7 +97,7 @@ body {
 #stars3:after {
   content: " ";
   position: absolute;
-  z-index: 10;
+  z-index: -10;
   top: 2000px;
   width: 3px;
   height: 3px;
@@ -109,9 +109,9 @@ body {
 
 @keyframes animStar {
   from {
-    transform: translateY(-7400px);
+    transform: translateY(-9000px);
   }
   to {
-    transform: translateY(-7900px);
+    transform: translateY(-4900px);
   }
 }

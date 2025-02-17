@@ -30,7 +30,7 @@ export default function RootLayout({
         <link rel="icon" href="../../public/natna.png" sizes="any" />
       </head>
 
-      <body className=' bg-primary text-white '>
+      <body className=' bg-primary text-white z-50 '>
       <div className='gradient'></div>
         <div className=' relative'>
         <ToastContainer

@@ -1,5 +1,5 @@
 'use client'
-import React,{useRef} from 'react'
+import React,{useRef, useState} from 'react'
 import axios from 'axios'
 import Image from 'next/image'
 import {MotionValue, motion, useScroll, useTransform} from 'framer-motion'
@@ -8,13 +8,17 @@ import mailbox from '../../public/open-mailbox-with-raised-flag.png'
 import {toast} from 'react-toastify'
 
 const Contact = () => {
+  const [sending, setSending] = useState(false)
+
   const handleSubmit = async(e)=>{
+    setSending(true)
     e.preventDefault()
     const mailData = {
        email: e.target[0].value,
        subject:e.target[1].value,
        message: e.target[2].value
     }
+    console.log(mailData)
     try{
       const url = new URL(`/api/sendemail`, window.location.origin);
       await axios.post(url.toString(), mailData)
@@ -48,6 +52,8 @@ const Contact = () => {
      console.log('hi')
     }catch(err){
       console.log(err)
+    } finally {
+      setSending(false)
     }
   }
 
@@ -81,15 +87,20 @@ const Contact = () => {
       <motion.div style={{y}} className=' mt-20 sm:mt-0 z-30  w-full px-3 sm:px-0'>
         <form action="#" className="space-y-8 flex flex-col" onSubmit={handleSubmit}>
           <div>
-              <input type="email" id="email" className="shadow-sm  border-2    rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  bg-transparent  focus:ring-2   focus:ring-amber-300 focus:border-amber-300 shadow-sm-light" placeholder="name@email.com" required/>
+              <input type="email" id="email" className="shadow-sm  border-2 outline-none    rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  bg-transparent focus:border-amber-300 shadow-sm-light" placeholder="Your email" required/>
           </div>
           <div>
-              <input type="text" id="subject" className="block p-3 w-full    rounded-lg border-2  shadow-sm focus:ring-2 focus:ring-amber-300  bg-transparent     shadow-sm-light" placeholder="Let me know how I can help you" required/>
+              <input type="text" id="subject" className="block p-3 w-full rounded-lg border-2  shadow-sm outline-none focus:border-amber-300  bg-transparent shadow-sm-light" placeholder="Subject" required/>
           </div>
           <div className="sm:col-span-2">
-              <textarea id="message" rows={6} className="block p-2.5 w-full    rounded-lg shadow-sm border-2  focus:ring-2 focus:ring-amber-300  bg-transparent    " placeholder="Leave a message..."></textarea>
+              <textarea id="message" rows={6} className="block p-2.5 w-full    rounded-lg shadow-sm border-2 outline-none focus:border-amber-300  bg-transparent" placeholder="Leave a message..."></textarea>
           </div>
-          <button type="submit" className="py-3 px-5  font-semibold text-center  rounded hover:shadow-md bg-sky-400 w-full hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+          <button disabled={sending} type="submit" className={` ${sending && 'cursor-not-allowed'} flex items-center gap-3  justify-center py-3 px-5  font-semibold text-center  rounded hover:shadow-md bg-sky-400 w-full hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800`}>
+            {sending && 
+             <div className=' border-4 rounded-full border-t-transparent border-white animate-spin w-5 h-5'></div>
+             }
+            {sending ? 'Sending...' :'Send message'}
+          </button>
         </form>
       </motion.div>
 
