@@ -3,6 +3,7 @@ import {useRef} from 'react'
 import {animate, motion, useScroll, useTransform} from 'framer-motion'
 import rocket from '../../public/rocket-dynamic-premium.png'
 import rocket1 from '/public/rocket_1f680.png'
+import rocketgif from '/public/rocket-joypixels.gif'
 import bullseye from '/public/bullseye.png'
 import trophy from '/public/trophy_1f3c6.png'
 import target from '../../public/target-dynamic-premium.png'
@@ -33,22 +34,24 @@ const Parallax = ({type}) => {
 
   const textY = useTransform(scrollYProgress, [0,1], ['0%','500%'])
   const bgY = useTransform(scrollYProgress, [0,1], ['0%','100%'])
-  const bgX = useTransform(scrollYProgress, [0,1], ['0%','100%'])
+  const bgX = useTransform(scrollYProgress, [0,1], ['-50%','100%'])
 
   return (
     <div ref={ref} className=' overflow-hidden relative h-full flex items-center justify-center'>
-        <motion.h1 style={{y:textY}} className=' text-6xl'>
-          {type==='services'? 'WHAT I DO':'what I did'}
+        <motion.h1 style={{y:textY}} className=' text-4xl uppercase font-bold'>
+          {/* {type==='services'? 'Turning ideas into reality':'what I did'} */}
+          Turning <span className='text-amber-300'>ideas</span> into <span className='text-sky-500 '>reality</span>
         </motion.h1>
         <motion.div style={{x:bgX}} variants={iconVariants} transition={{duration:2, repeat:Infinity, repeatType:'mirror'}} initial='initial' whileInView={'animate'}
           className=' hidden sm:block bottom-10 left-20 text-9xl  absolute  w-[15rem] h-[15rem]' >
           <Image
-            src={rocket1}
+            src={rocketgif}
             fill
             alt='image'
+            className=' -rotate-12 '
           />
         </motion.div>
-        <motion.div
+        {/* <motion.div
         initial={{ offsetDistance: "0%", scale: 1 }}
         animate={{ offsetDistance: "100%", scale: 0.9, rotateY:-20, rotateX:-20 }}
         transition={{duration: 2, yoyo: Infinity, ease: "easeInOut", repeat:Infinity, repeatType:'mirror'}}
@@ -58,8 +61,8 @@ const Parallax = ({type}) => {
             fill
             alt='image'
           />
-        </motion.div>
-        <motion.div  
+        </motion.div> */}
+        {/* <motion.div  
           initial={{ offsetDistance: "0%", rotate:-10 }}
           animate={{ offsetDistance: "100%", rotate:10 }}
           transition={{duration: 1, yoyo: Infinity, ease: "easeInOut", repeat:Infinity, repeatType:'mirror'}}
@@ -69,7 +72,7 @@ const Parallax = ({type}) => {
             fill
             alt='image'
           />
-        </motion.div>
+        </motion.div> */}
 
 
         

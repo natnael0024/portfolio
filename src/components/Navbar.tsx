@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React from 'react'
 import {motion} from 'framer-motion'
-import { FaLinkedin } from "react-icons/fa6";
+import { FaLinkedin, FaDownload } from "react-icons/fa6";
 import { FaXTwitter, FaGithub, FaHackerrank, FaBlog } from "react-icons/fa6";
 
 
@@ -53,12 +53,19 @@ const Navbar = () => {
               duration:0.5
              }}
               className=' text-2xl hidden sm:block font-bold'>Nat</motion.div>
-             <div className=' flex gap-5'>
+             <div className=' flex items-center gap-5'>
                  {
                     socialMedias.map(sm=>(
                         <Link href={sm.link} target='_blank' rel="noopener noreferrer" className=' text-2xl'>{sm.icon}</Link>
                     ))
                  }
+                <a 
+                    href="/Natnael_Legesse's_Resume.pdf" 
+                    download 
+                    className="flex border border-gray-100 rounded-full items-center gap-2 text-sm sm:text-base  text-white px-5 py-2 hover:bg-gray-300 hover:bg-opacity-25 transition"
+                >
+                    <FaDownload/> Resume
+                </a>
              </div>
          </div> 
         </motion.div>
