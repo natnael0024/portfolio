@@ -63,10 +63,20 @@ const Item: React.FC<ItemProps> = ({id,title,desc,image,url,techStack}) => {
             <motion.div style={{y:textY}} className='  sm:pt-0 flex items-center sm:items-start flex-col gap-5 flex-1'>
                 <h1 className=' text-3xl sm:text-6xl font-bold'>{title}</h1>
                 <h3 className=' break-words text-gray-300'>{desc}</h3>
-                <div className=' grid grid-cols-3 sm:flex sm:flex-wrap gap-3  text-amber-300'>
-                    {techStack.map((tech,index)=>(
-                        <h3 className='border border-amber-400 border-opacity-40 px-1 rounded ' key={index}>{tech}</h3>
-                    ))}
+                <div className=' grid auto-rows-auto grid-flow-row-dense grid-cols-3 whitespace-nowrap sm:flex sm:flex-wrap gap-2  text-amber-300'>
+                    {techStack.map((tech, index) => {
+                        const isLong = tech.length > 12;
+                        return (
+                        <div
+                          key={index}
+                          className={`bg-amber-100 border border-amber-400 text-amber-800 flex items-center justify-center px-3 py-1 rounded-full shadow-sm hover:shadow-md transition-shadow duration-300 text-sm font-medium
+                                        ${isLong ? 'col-span-2' :''}`}
+                        >
+                          {tech}
+                        </div>
+                        )
+                      })
+                    }
                 </div>
                 {id !== 8 &&
                 <Link href={url} target="_blank" rel="noopener noreferrer"
