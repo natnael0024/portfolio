@@ -78,7 +78,7 @@ const Item: React.FC<ItemProps> = ({id,title,desc,image,url,techStack}) => {
                       })
                     }
                 </div>
-                {id !== 8 &&
+                {id !== 2 &&
                 <Link href={url} target="_blank" rel="noopener noreferrer"
                 className=' bg-sky-400 p-2 px-10 rounded'>Visit</Link>
                 }
