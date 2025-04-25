@@ -8,6 +8,7 @@ import Services from '@/components/Services'
 import Portfolio from '@/components/Portfolio/Portfolio'
 import Contact from '@/components/Contact'
 import Skillset from '@/components/Skillset'
+import GitHubCalendar from '@/components/GithubCalendar'
 
 export default function Home() {
   return (
@@ -25,7 +26,10 @@ export default function Home() {
       <section id='Skills'>
         <Skillset/>
       </section>
-        <Portfolio/>
+      <Portfolio/>
+      <section id='GithubCalendar'>
+        <GitHubCalendar/>
+      </section>
       <section id='Contact'>
         <Contact/>
       </section>
