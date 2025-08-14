@@ -6,7 +6,7 @@ import p3 from '../../../public/yba.png'
 import p4 from '../../../public/natai2.png'
 import p5 from '../../../public/teamlink.png'
 import p6 from '../../../public/chillncode.png'
-import p7 from '../../../public/nataitgbot.png'
+import p7 from '../../../public/nataitgbot.jpg'
 import p8 from '../../../public/tti.png'
 import p9 from '../../../public/mystore.png'
 
