@@ -2,7 +2,7 @@
 import React,{useRef} from 'react'
 import p1 from '../../../public/p1.png'
 import p2 from '../../../public/tew.png'
-import p3 from '../../../public/rhm.png'
+import p3 from '../../../public/yba.png'
 import p4 from '../../../public/natai3.png'
 import p5 from '../../../public/teamlink.png'
 import p6 from '../../../public/chillncode.png'
@@ -23,6 +23,14 @@ const portfolios = [
       image:p9,
       url :'https://mystore-a0s0.onrender.com', 
       techStack:['Laravel','NextJs','Postgresql']
+    },
+    {
+      id:6,
+      title:'Yemikeray Bet Ale',
+      desc:'Yemikeray Bet Ale is a rental property marketplace connecting owners/agents with renters. It offers secure user accounts, property listing, advanced search, detailed profiles and communication tools.The platform also features an admin dashboard.',
+      image:p3,
+      url :'https://yba.onrender.com/',
+      techStack:['Django','JavaScript','TailwindCSS','Postgresql','Supabase']
     },
     {
       id:2,
@@ -55,14 +63,6 @@ const portfolios = [
       image:p8,
       url :'https://text-to-image-nat-ai.onrender.com', 
       techStack:['Python','FastAPI','HuggingFace Model','ReactJs']
-    },
-    {
-      id:6,
-      title:'Yemikeray Bet Ale',
-      desc:'Yemikeray Bet Ale is a rental property marketplace connecting owners/agents with renters. It offers secure user accounts, property listing, advanced search, detailed profiles and communication tools.The platform also features an admin dashboard.',
-      image:p3,
-      url :'https://yba.onrender.com/',
-      techStack:['Django','JavaScript','TailwindCSS','Postgresql','Supabase']
     },
     {
       id:7,
